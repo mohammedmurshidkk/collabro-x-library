@@ -1,0 +1,10 @@
+import { default as dayjs } from 'dayjs';
+export declare const DATE_FORMAT = "DD-MM-YYYY";
+export declare const DATE_FORMAT_ISO = "YYYY-MM-DD";
+export declare const DATETIME_FORMAT = "DD-MM-YYYY HH:mm:ss";
+export declare const DATETIME_FORMAT_ISO = "YYYY-MM-DDTHH:mm:ssZ";
+export declare const formatDate: (date: Date | string, format?: string) => string;
+export declare const toUTC: (date: Date | string) => dayjs.Dayjs;
+export declare const isValidDate: (date: Date | string) => boolean;
+export declare const parseDate: (date: string, format?: string) => dayjs.Dayjs;
+export { dayjs };
