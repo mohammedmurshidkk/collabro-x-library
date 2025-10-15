@@ -1,12 +1,15 @@
 {
   "type": "module",
-  "name": "@collabro/x-library",
+  "name": "@mohammedmurshidkk/x-library",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.cjs",
   "style": "dist/index.css",
   "module": "./dist/index.es.js",
   "types": "./dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
