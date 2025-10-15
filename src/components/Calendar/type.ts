@@ -1,0 +1,9 @@
+import * as React from 'react'
+import { DayButton, DayPicker } from 'react-day-picker'
+import { Button } from '..'
+
+export type CalendarProps = React.ComponentProps<typeof DayPicker> & {
+  buttonVariant?: React.ComponentProps<typeof Button>['variant']
+}
+
+export type CalendarDayButtonProps = React.ComponentProps<typeof DayButton>
