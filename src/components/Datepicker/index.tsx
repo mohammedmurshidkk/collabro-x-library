@@ -2,7 +2,7 @@ import * as React from 'react'
 import { CalendarIcon } from 'lucide-react'
 import { formatDate, isValidDate, parseDate } from '@/utils/dayjs'
 import { Calendar, Popover, PopoverContent, PopoverTrigger, Input } from '..'
-import { cn } from '@/lib/utils'
+import { cn } from '@/utils'
 import { DatepickerProps } from './type'
 
 const convertDateFnsToDayjsFormat = (format: string) => {

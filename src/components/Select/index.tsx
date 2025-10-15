@@ -5,7 +5,7 @@ import Select, {
   CSSObjectWithLabel,
   ControlProps,
 } from 'react-select'
-import { cn } from '@/lib/utils'
+import { cn } from '@/utils'
 import { SelectProps, SelectOption } from './type'
 import { ChevronDown } from 'lucide-react'
 import { theme } from '@/lib/theme'

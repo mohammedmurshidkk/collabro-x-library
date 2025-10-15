@@ -1,15 +1,12 @@
 {
   "type": "module",
-  "name": "@mohammedmurshidkk/x-library",
-  "version": "1.0.0",
+  "name": "@ksuit/ikm-ui-library",
+  "version": "3.0.0",
   "description": "",
   "main": "./dist/index.cjs",
   "style": "dist/index.css",
-  "module": "./dist/index.es.js",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -17,8 +14,22 @@
       "style": "./dist/index.css",
       "require": "./dist/index.cjs"
     },
-    "./index.css": "./dist/index.css",
-    "./css": "./dist/index.css"
+    "./components": {
+      "types": "./dist/components.d.ts",
+      "import": "./dist/components.js",
+      "require": "./dist/components.cjs"
+    },
+    "./utils": {
+      "types": "./dist/utils.d.ts",
+      "import": "./dist/utils.js",
+      "require": "./dist/utils.cjs"
+    },
+    "./theme": {
+      "types": "./dist/theme.d.ts",
+      "import": "./dist/theme.js",
+      "require": "./dist/theme.cjs"
+    },
+    "./index.css": "./dist/index.css"
   },
   "files": [
     "dist"
