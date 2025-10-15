@@ -5,7 +5,7 @@
   "description": "",
   "main": "./dist/index.cjs",
   "style": "dist/index.css",
-  "module": "./dist/index.js",
+  "module": "./dist/index.es.js",
   "types": "./dist/index.d.ts",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
@@ -16,21 +16,6 @@
       "import": "./dist/index.js",
       "style": "./dist/index.css",
       "require": "./dist/index.cjs"
-    },
-    "./components": {
-      "types": "./dist/components.d.ts",
-      "import": "./dist/components.js",
-      "require": "./dist/components.cjs"
-    },
-    "./utils": {
-      "types": "./dist/utils.d.ts",
-      "import": "./dist/utils.js",
-      "require": "./dist/utils.cjs"
-    },
-    "./theme": {
-      "types": "./dist/theme.d.ts",
-      "import": "./dist/theme.js",
-      "require": "./dist/theme.cjs"
     },
     "./index.css": "./dist/index.css"
   },

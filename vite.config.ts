@@ -20,16 +20,10 @@ export default defineConfig({
   ],
   build: {
     lib: {
-      entry: {
-        index: resolve(__dirname, 'src/index.ts'),
-        components: resolve(__dirname, 'src/components/index.ts'),
-        utils: resolve(__dirname, 'src/utils/index.ts'),
-        theme: resolve(__dirname, 'src/lib/theme.ts'),
-      },
+      entry: resolve(__dirname, 'src/index.ts'),
       name: 'ikm-ui-library',
       formats: ['es', 'cjs'],
-      fileName: (format, entryName) =>
-        `${entryName}.${format === 'es' ? 'js' : 'cjs'}`,
+      fileName: (format) => `index.${format === 'es' ? 'js' : 'cjs'}`,
     },
     cssCodeSplit: false,
     rollupOptions: {
